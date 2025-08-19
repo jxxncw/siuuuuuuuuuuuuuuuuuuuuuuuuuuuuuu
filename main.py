@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('siuuuuuu')
+st.title('이히히히힣')
 
 # 사용자 입력 받기
 name = st.text_input('이름을 입력해주세요 : ')
