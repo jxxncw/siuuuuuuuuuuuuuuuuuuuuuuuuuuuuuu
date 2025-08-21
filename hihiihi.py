@@ -4,10 +4,10 @@ st.title('이히히히힣')
 
 # 사용자 입력 받기
 name = st.text_input('이름을 입력해주세요 : ')
-mbti = st.selectbox('MBTI를 선택해주세요:', [
+mbti = st.selectbox('혈액형를 선택해주세요:', [
     'A형', 'B형', 'O형', 'AB형', ])
 
-# MBTI 설명 데이터 (더 자세히)
+# 혈액형 설명 데이터 (더 자세히)
 mbti_data = {
     'A형': {
         '특징': '세심하고 책임감 있는 완벽주의자. 계획적이고 타인을 배려하는 성향.',
@@ -37,7 +37,7 @@ if st.button('특징 생성'):
         직업 = mbti_data[mbti]['직업']
         잘_맞는_mbti = ', '.join(mbti_data[mbti]['잘 맞는 혈액형'])
 
-        st.write(f"{name}님! 당신의 MBTI 유형은 {mbti}입니다!")
+        st.write(f"{name}님! 당신의 혈액형 유형은 {mbti}입니다!")
         st.write(f"**특징**: {특징}")
         st.write(f"**어울리는 직업**: {직업}")
         st.write(f"**잘 맞는 MBTI 유형**: {잘_맞는_mbti}")
